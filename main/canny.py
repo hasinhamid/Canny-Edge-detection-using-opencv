@@ -16,7 +16,7 @@ for img_p in image_paths:
     #gaussian blur for better ditection
     Gimg= cv2.GaussianBlur(img_gray,(3,3),0)
     #canny edge 
-    edge= cv2.Canny(img_gray,70,100)
+    edge= cv2.Canny(Gimg,70,100)
     cv2.imshow("after",edge)   #shows after pic but dont save it
     cv2.waitKey(0) 
 
